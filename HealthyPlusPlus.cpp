@@ -10,6 +10,7 @@
 
 #include <iostream>
 #include <cstdlib>
+#include <stdlib.h>
 #include <cmath>
 
 void menu();
@@ -88,6 +89,7 @@ void cBMI(){
         cout << "Third degree obesity" << endl;
         cout << "BMI: " << bmi << " kg/m2" << endl;
     }
+    std::exit(0);
 }
 
 void cFM(){
@@ -115,6 +117,7 @@ void cFM(){
     }
     else
         cout << "Your choise isn't valid" << endl;
+    std::exit(0);
 }
 
 void cIW(){
@@ -133,4 +136,5 @@ void cIW(){
     }
     }while(i < 2);
     cout << "Ideal weight: " << i << "kg " << "(Lorenz formula)" << endl;
+    std::exit(0);
 }
