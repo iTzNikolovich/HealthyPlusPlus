@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="script.js"></script>
+        <meta name="author" content="iTzNikolovich">
+        <!--Favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+        <link rel="manifest" href="fav/site.webmanifest">
+        <link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <!--Favicon-->
+        <title>Healthy++</title>
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap" rel="stylesheet">
+        <!--Google Fonts-->
+    </head>
+    <body>
+        <h1 id="title">HealthyPlusPlus</h1>
+        <h3 style="margin-top: -20px;">Web version</h3>
+        <a href="https://github.com/iTzNikolovich/HealthyPlusPlus"><img src="img/hpp.png" alt="HealthyPlusPlus" id="logo"></a>
+        <br>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="bmi.html">BMI</a></li>
+            <li><a href="fatmass.html" class="activenav">FAT MASS</a></li>
+            <li><a href="idealweight.html">IDEAL WEIGHT</a></li>
+        </ul>
+        <h4 style="color: rgb(160, 52, 52); font-size: 30px;">FAT MASS CALCULATOR</h4>
+        <input type="number" id="height" placeholder="Height [cm]:">
+        <br>
+        <input type="number" id="neck" placeholder="Neck circumference [cm]:">
+        <br>
+        <input type="number" id="abdominal" placeholder="Abdominal circumference [cm]:">
+        <br>
+        <input type="number" id="hips" placeholder="Hips circumference [cm]:">
+        <br>
+        <select id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <p id="result"></p>
+        <button id="submit" onclick="fatmass()">Submit</button>
+    </body>
+    <footer>
+        <img src="https://madewithlove.now.sh/it" alt="Made with love in Italy">
+    </footer>
+</html>
